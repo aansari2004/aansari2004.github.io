@@ -1,4 +1,4 @@
-# Guessing Game Flowchart
+# Random Guessing Game Flowchart
 
 ```mermaid
 flowchart TD
@@ -6,12 +6,12 @@ flowchart TD
     GenerateNumber --> |Prompt user for input| GetInput[/User Input/]
     GetInput --> |Is input valid?| ValidateInput{Valid Input?}
     ValidateInput --> |Yes| CompareInput{Guess Correct?}
-    ValidateInput --> |No| InvalidInput[/Invalid Input. Try Again/]
+    ValidateInput --> |No| InvalidInput[/Invalid input, try again/]
     InvalidInput --> GetInput
-    CompareInput --> |Yes| SuccessMessage[/Correct! You Won!/] --> End([End])
+    CompareInput --> |Yes| SuccessMessage[/Display: Correct! You won!/] --> End([End])
     CompareInput --> |No| HighLow{Too High or Too Low?}
-    HighLow --> |Too High| TooHighMessage[/Too High, Try Again/]
-    HighLow --> |Too Low| TooLowMessage[/Too Low, Try Again/]
+    HighLow --> |Too High| TooHighMessage[/Display: Too High, try again/]
+    HighLow --> |Too Low| TooLowMessage[/Display: Too Low, try again/]
     TooHighMessage --> GetInput
     TooLowMessage --> GetInput
 
