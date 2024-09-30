@@ -2,18 +2,18 @@
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> |Generate random number| GenerateNumber[/Random Number/]
-    GenerateNumber --> |Prompt user for input| GetInput[/User Input/]
-    GetInput --> |Is input valid?| ValidateInput{Valid Input?}
-    ValidateInput --> |Yes| CompareInput{Guess Correct?}
-    ValidateInput --> |No| InvalidInput[/Invalid input, try again/]
-    InvalidInput --> GetInput
-    CompareInput --> |Yes| SuccessMessage[/Display: Correct! You won!/] --> End([End])
-    CompareInput --> |No| HighLow{Too High or Too Low?}
-    HighLow --> |Too High| TooHighMessage[/Display: Too High, try again/]
-    HighLow --> |Too Low| TooLowMessage[/Display: Too Low, try again/]
-    TooHighMessage --> GetInput
-    TooLowMessage --> GetInput
+  Start([Start]) --> |Generate random number| GenerateNumber[/Random Number/]
+  GenerateNumber --> |Prompt user for input| GetInput[/User Input/]
+  GetInput --> |Is input valid?| ValidateInput{Valid Input?}
+  ValidateInput --> |Yes| CompareInput{Guess Correct?}
+  ValidateInput --> |No| InvalidInput[/Invalid input, try again/]
+  InvalidInput --> GetInput
+  CompareInput --> |Yes| SuccessMessage[/Display: Correct! You won!/] --> End([End])
+  CompareInput --> |No| HighLow{Too High or Too Low?}
+  HighLow --> |Too High| TooHighMessage[/Display: Too High, try again/]
+  HighLow --> |Too Low| TooLowMessage[/Display: Too Low, try again/]
+  TooHighMessage --> GetInput
+  TooLowMessage --> GetInput
 
 
 ## **Guessing Game Flowchart Explanation**
