@@ -15,7 +15,7 @@ flowchart TD
     TooHighMessage --> GetInput
     TooLowMessage --> GetInput
 
-## **Guessing Game Flowchart Explanation**
+## Guessing Game Flowchart Explanation
 Start: The program begins and initializes the game.
 GenerateNumber: The program generates a random number within a specified range (e.g., 1 to 100).
 GetInput: The user is prompted to enter a guess.
